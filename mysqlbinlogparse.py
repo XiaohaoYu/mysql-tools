@@ -14,7 +14,7 @@ def binlog_output():
     file_num = binlog_file.split('.')[1]
 
     binlog_log = 'binlog_%s.log' % file_num
-    os.system('/usr/local/mysql5637/mysql/bin/mysqlbinlog -v --base64-output=decode-rows %s > %s' %(binlog_file, binlog_log))
+    os.system('/usr/local/mysql/bin/mysqlbinlog -v --base64-output=decode-rows %s > %s' %(binlog_file, binlog_log))
 
     return binlog_log
 
@@ -75,8 +75,8 @@ if __name__ == '__main__':
     os.system('rm -f %s' % binlog_log)
 
     # 收集时间
-    print('开始时间: ;', start_time)
-    print('结束时间: ;', stop_time)
+    print('开始时间: ', start_time)
+    print('结束时间: ', stop_time)
 
     # 统计DML总次数
     print('\nDML总次数: ', insert_count+update_count+delete_count)
