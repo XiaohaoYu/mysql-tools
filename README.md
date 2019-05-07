@@ -1,30 +1,27 @@
 # yuxh_useful
-# Ò»Ğ©mysqlÊı¾İ¿âÈÕ³£ÔËÎ¬ÊµÓÃµÄpython½Å±¾
+# ä¸€äº›mysqlæ•°æ®åº“æ—¥å¸¸è¿ç»´å®ç”¨çš„pythonè„šæœ¬
 
-1. mysqlbinlogparse.py   # ¶Ômysqlbinlog½øĞĞ½âÎö£¬Í³¼Æ±íµÄDML²Ù×÷´ÎÊı¡£
-Ö´ĞĞ£º   python3 mysqlbinlogparse.py mysql-bin.000010
-Êä³ö£º  
-¿ªÊ¼Ê±¼ä:  2019-04-15 20:22:06 
-½áÊøÊ±¼ä:  2019-04-30  1:47:32 
+1. mysqlbinlogparse.py   # å¯¹mysqlbinlogè¿›è¡Œè§£æï¼Œç»Ÿè®¡è¡¨çš„DMLæ“ä½œæ¬¡æ•°ã€‚
+æ‰§è¡Œï¼š   python3 mysqlbinlogparse.py mysql-bin.000010
+è¾“å‡ºï¼š  
+å¼€å§‹æ—¶é—´:  2019-04-15 20:22:06 
+ç»“æŸæ—¶é—´:  2019-04-30  1:47:32 
 
-DML×Ü´ÎÊı:  18395234
-  Insert×Ü´ÎÊı:  9161095
-  Delete×Ü´ÎÊı:  9163882
-  Update×Ü´ÎÊı:  70257
+DMLæ€»æ¬¡æ•°:  18395234
+  Insertæ€»æ¬¡æ•°:  9161095
+  Deleteæ€»æ¬¡æ•°:  9163882
+  Updateæ€»æ¬¡æ•°:  70257
 
-Insert Í³¼Æ: 
+Insert ç»Ÿè®¡: 
   DB.Table: zabbix.history_uint ,  Count: 5284051
   DB.Table: zabbix.history ,  Count: 3707065
 
 
-Delete Í³¼Æ: 
+Delete ç»Ÿè®¡: 
   DB.Table: zabbix.item_discovery ,  Count: 66690
   DB.Table: zabbix.sessions ,  Count: 1622
 
 
-Update Í³¼Æ: 
+Update ç»Ÿè®¡: 
   DB.Table: zabbix.history_uint ,  Count: 5241448
   DB.Table: zabbix.history ,  Count: 3708638
-
-
-
