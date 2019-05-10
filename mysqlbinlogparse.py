@@ -18,7 +18,7 @@ def binlog_output():
 
     return binlog_log
 
-# 对
+# 对binlog日志处理
 def binlog_parse(binlog_log):
 
     delete_count = 0
