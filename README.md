@@ -1,5 +1,5 @@
-# yuxh_useful
-# 一些mysql数据库日常运维实用的python脚本
+# mysql-tools
+# mysql数据库日常运维实用的python脚本
 
 1. mysqlbinlogparse.py   # 对mysqlbinlog进行解析，统计表的DML操作次数。
 执行：   python3 mysqlbinlogparse.py mysql-bin.000010
