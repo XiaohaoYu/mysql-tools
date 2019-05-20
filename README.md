@@ -25,3 +25,18 @@ Delete 统计:
 Update 统计: 
   DB.Table: zabbix.history_uint ,  Count: 5241448
   DB.Table: zabbix.history ,  Count: 3708638
+
+
+
+2. binlog2sql.py   # 对mysqlbinlog进行解析，生成回滚语句
+执行：python rollback.py -f 'mysql-bin.000001' -o '/tmp/rollback.sql' -h 192.168.0.1 -u 'user' -p 'pwd' -P 3307 -d dbname
+
+
+3. mysql_backup.py    # mysql备份脚本，推送微信信息
+执行： python mysql_backup.py
+微信:  Title:  MySQL备份信息
+	   Content:  时间:20190520,10.157.138.200_5637数据库备份成功,文件传输成功。
+
+
+4. wechat.py		 # 微信推送信息脚本。
+执行:   python wechat.py  title  content
