@@ -40,3 +40,6 @@ Update 统计:
 
 4. wechat.py		 # 微信推送信息脚本。
 执行:   python wechat.py  title  content
+
+
+5. mysql2excel.py      #mysql导出数据到excel
