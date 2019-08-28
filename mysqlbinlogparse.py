@@ -1,6 +1,7 @@
-# coding:utf-8
-# Author: YuXiaohao
-# 解析binlog，统计热度表，表的DML个数
+#!/bin/env python
+#coding:utf-8
+#Author: Hogan
+#Descript : 解析binlog，统计热度表，表的DML个数
 
 
 import sys
